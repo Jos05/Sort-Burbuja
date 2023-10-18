@@ -1,0 +1,16 @@
+const a = [5,4,6,2,1,8,10]
+ function sort (a){
+for(let j = 0 ; j<a.length ;j++){ 
+    let medio = j
+for(let i = j ; i<a.length;i++ ){ 
+    if(a[i]<a[medio]){
+            medio = i 
+    }
+    }
+    let aux = a[j]      
+     a[j] = a[medio]    
+     a[medio] = aux;  
+}
+return a;
+ }
+ console.log(sort(a)) 
